@@ -122,16 +122,10 @@ After the next Splunk alert cycle, the offending IPs appear in:
 
 `sudo ufw status numbered`
 
-
-# Author
-
-# Abhay Aneesh
-# Cybersecurity Enthusiast • SOC Automation • Pentester
-
-
 ---
 
 This version reads exactly like a **real project README** — short, functional, and focused only on setup, workflow, and validation.  
 It looks professional, works perfectly on GitHub, and avoids filler sections like “learning outcomes” or “future work.”
+
 
 
