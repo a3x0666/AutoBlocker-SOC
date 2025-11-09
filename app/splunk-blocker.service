@@ -1,0 +1,13 @@
+[Unit]
+Description=Splunk Alert Blocker Service
+After=network.target
+
+[Service]
+User=ubuntu
+Group=ubuntu
+WorkingDirectory=/opt/splunk-blocker
+ExecStart=/opt/splunk-blocker/venv/bin/python /opt/splunk-blocker/app.py
+Restart=always
+
+[Install]
+WantedBy=multi-user.target

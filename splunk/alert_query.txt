@@ -1,0 +1,4 @@
+index=main source="/var/log/auth.log"
+| rex "sshd\\[\\d+\\]: Failed password for (?:invalid user )?(?<user>\\S+) from (?<src_ip>[0-9.]+)"
+| stats count by src_ip, user
+| where count > 3
